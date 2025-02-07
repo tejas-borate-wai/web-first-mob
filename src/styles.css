@@ -1,111 +1,228 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-#navbar{
-    padding:10px;
-    margin:0;
+
+#navbar {
+    padding: 10px;
+    margin: 0;
 
 }
-a{
+
+a {
     text-decoration: none;
 }
-#jobs{
+
+#jobs {
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-h2{
-    margin:0;
+
+h2 {
+    margin: 0;
     margin-top: 20px;
-    
-}
-.apply{
-    float:right;
-    margin:0;
-}
-#logo{
-margin:0;
-height:30px;
 
 }
-#about{
-    display:flex;
-    margin:0 auto;
+
+.apply {
+    float: right;
+    margin: 0;
+}
+
+#logo {
+    margin: 0;
+    height: 30px;
+
+}
+
+#about {
+    display: flex;
+    margin: 0 auto;
     max-width: 800px;
 }
-#new{
-    display:flex;
-    margin:0 auto;
+
+#new {
+    display: flex;
+    margin: 0 auto;
     max-width: 800px;
 }
 
-#team{
-   width:50px;
+#team {
+    width: 50px;
 }
-#course{
-    width:50%;
+
+#course {
+    width: 50%;
 
 }
-#teamimg{
-    width:400px;
+
+#teamimg {
+    width: 400px;
     border-radius: 10px;
 }
-h1{
-    text-align:center;
+
+h1 {
+    text-align: center;
+    /* font-size: 50px; */
 
 }
-#banner{
-    width:100%;
+
+#banner {
+    width: 100%;
     object-fit: cover;
 }
-#footer{
+
+#footer {
     background-color: rgb(244, 244, 241);
     text-align: center;
 }
 
-#footerlinks li{
-display:inline;
-margin:0 20px;
+#footerlinks li {
+    display: inline;
+    margin: 0 20px;
 
 }
-#jobstable{
-width:100%;
-border:1px solid black;
-border-collapse: collapse;
-padding: 10px;
+
+#jobstable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
 }
-.jobsheader th{
-border:1px solid rgb(247, 15, 15);
-padding: 8px;
-text-align: center;
+
+.jobsheader th {
+    border: 1px solid rgb(247, 15, 15);
+    padding: 8px;
+    text-align: center;
 }
-.jobsdata td{
-    border:1px solid rgb(115, 61, 61);
+
+.jobsdata td {
+    border: 1px solid rgb(115, 61, 61);
     padding: 8px;
 }
-#jobstable tr:nth-child(odd){
+
+#jobstable tr:nth-child(odd) {
     background-color: lightgrey;
 }
-#application-form div{
-    margin:16px;
+
+#application-form div {
+    margin: 16px;
 }
-#application-form label{
-    font-weight:600;
+
+#application-form label {
+    font-weight: 600;
 }
-#application-form input,select,textarea{
-    padding:4px;
-    font-size:1.25rem;
-    margin-top:4px;
+
+#application-form input,
+select,
+textarea {
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
     border-radius: 5px;
-    border:1px solid gray;
+    border: 1px solid gray;
 
 }
-#application-form textarea{
-    width:80%;
+
+#application-form textarea {
+    width: 80%;
     font-family: sans-serif;
 }
-#application-form{
-    margin:0 auto;
-    max-width:800px;
+
+#application-form {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 25px;
+        /* Adjusted for better readability */
+        color: red;
+    }
+
+
+
+    #team {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+
+    #teamimg {
+        width: 80%;
+        /* margin: 10px auto ; */
+        border-radius: 10px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin:0 auto; */
+        /* max-width: 800px; */
+    }
+
+    #course {
+        width: 100%;
+    }
+
+    #course p {
+        padding: 3px 10px;
+    }
+
+    #application-form div {
+        margin: 16px;
+    }
+
+    #application-form label {
+        font-weight: 600;
+    }
+
+    #application-form input,
+    select,
+    textarea {
+        padding: 2px;
+        font-size: 1.10rem;
+        margin-top: 4px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+    }
+
+    #application-form textarea {
+        width: 80%;
+        font-family: sans-serif;
+    }
+
+    #application-form {
+        margin: 0 auto;
+        /* max-width: 800px; */
+    }
+
+    #footer ul {
+        background-color: rgb(244, 244, 241);
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #footerlinks li {
+        display: block;
+        margin: 10px 20px;
+
+    }
+
+    #footer span {
+        text-align: center;
+    }
+
+    #banner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
 }
